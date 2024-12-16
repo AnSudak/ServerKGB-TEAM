@@ -1,0 +1,125 @@
+$grp SCR_AIWaypoint : "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et" {
+ PatrolGorey1 {
+  coords 4882.647 112.42 8155.663
+  angleY 19.838
+ }
+ PatrolGorey2 {
+  coords 4822.228 118.616 8145.41
+  angleY -25.241
+ }
+ PatrolGorey3 {
+  coords 4797.19 120.305 8089.638
+  angleY 83.468
+ }
+ PatrolGorey4 {
+  coords 4821.86 121.526 7993.674
+  angleY 19.838
+ }
+ PatrolGorey5 {
+  coords 4843.853 117.223 8020.222
+  angleY 19.838
+ }
+ PatrolGorey6 {
+  coords 4874.905 113.78 8036.617
+  angleY 19.838
+ }
+ PatrolGorey7 {
+  coords 4889.798 111.367 8066.101
+  angleY 19.838
+ }
+ PatrolGorey8 {
+  coords 4908.111 109.402 8077.362
+  angleY 19.838
+ }
+ PatrolGorey9 {
+  coords 4916.821 106.089 8153.172
+  angleY 19.838
+ }
+}
+AIWaypointCycle PatrolGoreyCycle1 : "{35BD6541CBB8AC08}Prefabs/AI/Waypoints/AIWaypoint_Cycle.et" {
+ coords 4868.23 114.654 8155.426
+ CycleWaypoints {
+  "PatrolGorey1" "PatrolGorey2" "PatrolGorey3" "PatrolGorey4" "PatrolGorey5" "PatrolGorey6" "PatrolGorey7" "PatrolGorey8" "PatrolGorey9"
+ }
+}
+SCR_TriggerTask : "{830711F178046FA7}Prefabs/Tasks/BaseTriggerTask.et" {
+ coords 4844.284 112.394 8089.723
+ {
+  SCR_BaseFactionTriggerEntity {
+   ID "55D072570E7E8ABF"
+   coords 11.77 -0.307 -8.91
+   SphereRadius 100
+   UpdatePeriod 0.1
+   m_sOwnerFactionKey "USSR"
+  }
+ }
+}
+$grp SCR_AIGroup : "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et" {
+ FireTeam1 {
+  components {
+   SCR_RespawnSystemComponent "{6320E20A435CD379}" {
+    m_SpawnLogic SCR_SpawnLogic "{6320E2080E01F8A7}" {
+    }
+    m_fDeployMenuOpenDelay 0.1
+   }
+  }
+  coords 4890.372 111.384 8155.574
+  angleY -52.66
+  m_aStaticWaypoints {
+   "PatrolGoreyCycle1"
+  }
+ }
+ FireTeam2 {
+  coords 4861.994 114.61 8053.244
+  angleY -54.927
+  m_aStaticWaypoints {
+   "Defend1"
+  }
+ }
+ FireTeam3 {
+  coords 4844.974 113.732 8111.809
+  angleY -54.927
+  m_aStaticWaypoints {
+   "Defend2"
+  }
+ }
+ FireTeam4 {
+  coords 4859.377 111.887 8079.644
+  angleY -54.927
+  m_aStaticWaypoints {
+   "Defend3"
+  }
+ }
+ FireTeam5 {
+  coords 4819.428 117.281 8074.339
+  angleY -54.927
+  m_aStaticWaypoints {
+   "Defend4"
+  }
+ }
+}
+$grp SCR_DefendWaypoint : "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et" {
+ Defend1 {
+  coords 4859.804 115.003 8050.466
+  AIBehaviorTreeMoveTo "{62D36413D46F02A6}AI/BehaviorTrees/Waypoints/WP_Patrol.bt"
+  CompletionRadius 12
+ }
+ Defend2 {
+  coords 4846.082 113.732 8117.061
+  AIBehaviorTreeMoveTo "{62D36413D46F02A6}AI/BehaviorTrees/Waypoints/WP_Patrol.bt"
+  CompletionRadius 12
+ }
+ Defend3 {
+  coords 4863.176 114.042 8076.037
+  AIBehaviorTreeMoveTo "{62D36413D46F02A6}AI/BehaviorTrees/Waypoints/WP_Patrol.bt"
+  CompletionRadius 4
+ }
+ Defend4 {
+  coords 4812.945 118.348 8077.181
+  AIBehaviorTreeMoveTo "{62D36413D46F02A6}AI/BehaviorTrees/Waypoints/WP_Patrol.bt"
+  CompletionRadius 4
+ }
+}
+Vehicle UH1H_base1 : "{D03C0F6044DB5208}Prefabs/Vehicles/Helicopters/UH1H/UH1H_base.et" {
+ coords 4864.159 111.592 8075.749
+}

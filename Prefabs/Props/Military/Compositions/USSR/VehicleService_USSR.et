@@ -1,0 +1,20 @@
+GenericEntity : "{62AFF7A02EE209F9}Prefabs/Props/Military/Compositions/VehicleService_base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{3867B82950462875}Assets/Props/Military/InteractionPoints/VehicleService/VehicleService_Barrels_USSR_01.xob"
+  }
+  SCR_CatalogEntitySpawnerComponent "{5D22B968F23A847A}" {
+   m_eType LIGHT_VEHICLE_DEPOT
+   m_eBuildingLabel SERVICE_VEHICLE_DEPOT_LIGHT
+   m_sDelegatePrefab "{5B423F7ACE06881D}Prefabs/Systems/Services/ServicePointDelegate_VehicleDepotLight.et"
+   m_aCatalogTypes {
+    30
+   }
+   m_bNeedAllLabels 0
+  }
+  SCR_FactionAffiliationComponent "{5D22B92ED0ABBFD4}" {
+   "faction affiliation" "USSR"
+  }
+ }
+}
