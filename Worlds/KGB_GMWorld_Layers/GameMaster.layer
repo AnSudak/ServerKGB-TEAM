@@ -12057,7 +12057,3 @@ $grp GenericEntity {
   }
  }
 }
-SCR_MapLocator {
- m_WorldDirections SCR_MapLocationQuadHint "{5AAA92CD91D1D8F5}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
- }
-}

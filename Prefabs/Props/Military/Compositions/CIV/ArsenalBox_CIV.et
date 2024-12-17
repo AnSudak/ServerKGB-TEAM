@@ -1,0 +1,30 @@
+GenericEntity : "{54986385A6AF77B2}Prefabs/Props/Military/Arsenal/ArsenalBoxes/ArsenalBox_Base.et" {
+ ID "607AB07289A1D82A"
+ components {
+  MeshObject "{56F2C6D1431AD85A}" {
+   Materials {
+    MaterialAssignClass "{63225B26A8C476D4}" {
+     SourceMaterial "ArsenalBox_01_Decal"
+     AssignedMaterial "{92EC7BAFC94B5547}Assets/Props/Military/AmmoBox/ArsenalBox_01/Data/ArsenalBox_01_Decal_USSR_equip.emat"
+    }
+    MaterialAssignClass "{60DCEDE555278B99}" {
+     SourceMaterial "explosive_0A0A9C1C7B189A8B"
+     AssignedMaterial "{8A9B5EA675FD654E}Assets/Props/Military/AmmoBox/ArsenalBox_01/Data/EquipmentBoxWooden_Explosives_01_CIV.emat"
+    }
+    MaterialAssignClass "{60DCEDE555278BB4}" {
+     SourceMaterial "tarp_EBFB69929B4DE0C6"
+     AssignedMaterial "{E8F5CA873E1109F8}Assets/Props/Military/AmmoBox/ArsenalBox_01/Data/EquipmentBoxWooden_Weapon_01_CIV.emat"
+    }
+    MaterialAssignClass "{60DCEDE555278A43}" {
+     SourceMaterial "weapon_box_6864083D30F4F63D"
+     AssignedMaterial "{8A9B5EA675FD654E}Assets/Props/Military/AmmoBox/ArsenalBox_01/Data/EquipmentBoxWooden_Explosives_01_CIV.emat"
+    }
+   }
+  }
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eSupportedArsenalItemTypes 556160
+   m_bAllowGetFactionFromParent 1
+   m_eArsenalSaveType SAVING_DISABLED
+  }
+ }
+}

@@ -1,0 +1,8 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{B3C41921F2813450}pictures/kgb_patch.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NormalPower 1.986
+ NMOMap "{BF20301E17ACA4A1}Assets/Characters/Patches/data/rhs_patch_us_flag_01_NMO.edds"
+}

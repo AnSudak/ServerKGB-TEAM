@@ -1,0 +1,15 @@
+$grp GenericEntity : "{ED95BC9B8DADCD8D}Prefabs/Compositions/Misc/SubCompositions/Storage/Location/Storage_Barracks_02_USSR.et" {
+ {
+  coords 6385.297 85.783 5576.73
+  angleY 30
+ }
+ {
+  components {
+   SCR_SlotCompositionComponent "{52CAE30B655050CF}" {
+    m_bOrientChildrenToTerrain 0
+   }
+  }
+  coords 6260.572 91.738 5685.251
+  angleY -150
+ }
+}

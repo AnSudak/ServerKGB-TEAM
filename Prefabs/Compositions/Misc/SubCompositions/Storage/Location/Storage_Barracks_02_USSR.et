@@ -1,0 +1,159 @@
+GenericEntity : "{08B059F856BF38EF}Prefabs/Compositions/Slotted/SupplyStorage_Base.et" {
+ ID "5282DCB5DFC8538F"
+ components {
+  SCR_SlotCompositionComponent "{52CAE30B655050CF}" {
+   m_bOrientChildrenToTerrain 0
+  }
+ }
+ {
+  GenericEntity {
+   ID "5D92D7C715030C81"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030C83"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030C86"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030C88"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030C8C"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030C8D"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030C8E"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030CFA"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030CFC"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "5D92D7C715030CFE"
+   components {
+    SCR_ResourceComponent "{5D247A59598D71AE}" {
+     m_aContainers {
+      SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+       m_fResourceValueCurrent 10000
+       m_fResourceValueMax 10000
+      }
+     }
+    }
+   }
+  }
+  GenericEntity : "{180803173F1C2EF6}Prefabs/Structures/Signs/Military/Sign_MaterialDepot_USSR_01.et" {
+   ID "63223BEF5780D6D0"
+   coords 1.038 0.243 0.425
+   angleY 93.446
+  }
+  GenericEntity : "{E149B20BCA1BC51B}Prefabs/Structures/Signs/Military/Supplies/Sign_SupplyStorage_01_Supplies_USSR.et" {
+   ID "63223BEF5780D536"
+   components {
+    SCR_ResourceComponent "{5E3298BE225F0743}" {
+     m_aGenerators {
+      SCR_ResourceGenerator "{5E3298A9DB3BDCA7}" {
+       m_fStorageRange 10000
+      }
+     }
+    }
+   }
+   coords 1.084 0.243 1.274
+   angleY 92.278
+  }
+ }
+}

@@ -1,0 +1,400 @@
+$grp StaticModelEntity : "{2B14EDB31FA5CEE7}Prefabs/Structures/Infrastructure/Culverts/DrainageChannelWood_01/DrainageChannelWood_01_base.et" {
+ {
+  coords 6338.327 5.973 5647.584
+  angleY -59.288
+ }
+ {
+  coords 6335.774 5.698 5643.287
+  angleY -59.288
+ }
+ {
+  coords 6333.226 5.433 5638.999
+  angleY -59.288
+ }
+ {
+  coords 6330.672 5.186 5634.7
+  angleY -59.288
+ }
+ {
+  coords 6328.129 5.014 5630.421
+  angleY -59.288
+ }
+ {
+  coords 6325.574 4.894 5626.121
+  angleY -59.288
+ }
+ {
+  coords 6323.028 4.776 5621.835
+  angleY -59.288
+ }
+ {
+  coords 6320.477 4.655 5617.537
+  angleY -59.288
+ }
+}
+GenericEntity : "{44FD6B68E3E9F83F}Prefabs/Structures/Signs/Military/SignRectangle_01_140x100/Sign_BaseEntrance_USSR_01.et" {
+ coords 6437.898 81.98 5624.962
+ angleY 30.576
+ scale 1.77
+}
+GenericEntity : "{4BD4ADE130847295}Prefabs/Structures/Signs/Military/Supplies/Sign_SupplyStorage_02_Hospital_USSR.et" {
+ coords 6246.683 92.289 5698.888
+ angleY 119.987
+}
+$grp StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
+ {
+  coords 6356.586 91.718 5643.327
+  angleY -149.95
+  {
+   GameEntity {
+    ID "555A8BAA49E0B771"
+    Flags 2098179
+    {
+     LightEntity {
+      ID "555A8BABD34F40C8"
+      Flags 2097155
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 6333.01 91.715 5603.721
+  angleY 120.05
+  {
+   GameEntity {
+    ID "555A8BAA49E0B771"
+    Flags 2098179
+    {
+     LightEntity {
+      ID "555A8BABD34F40C8"
+      Flags 2097155
+     }
+    }
+   }
+  }
+ }
+}
+$grp SCR_DestructibleEntity : "{879865F07EA907B0}Prefabs/Structures/Walls/Concrete/ConcreteWall_02/ConcreteWall_02_4m.et" {
+ {
+  coords 6353.688 8.705 5643.409
+  angleY -149.328
+ }
+ {
+  coords 6350.293 8.648 5645.418
+  angleY -149.328
+ }
+ {
+  coords 6346.911 8.527 5647.423
+  angleY -149.328
+ }
+ {
+  coords 6343.492 8.272 5649.451
+  angleY -149.328
+ }
+ {
+  coords 6340.097 7.977 5651.464
+  angleY -149.328
+ }
+ {
+  coords 6331.567 7.05 5606.107
+  angleY -149.328
+ }
+ {
+  coords 6317.975 6.36 5614.162
+  angleY -149.328
+ }
+ {
+  coords 6328.172 6.867 5608.117
+  angleY -149.328
+ }
+ {
+  coords 6324.787 6.708 5610.121
+  angleY -149.328
+ }
+ {
+  coords 6321.367 6.513 5612.149
+  angleY -149.328
+ }
+ {
+  coords 6354.182 8.703 5640.821
+  angleY 120.672
+ }
+ {
+  coords 6346.125 7.604 5627.231
+  angleY 120.672
+ }
+ {
+  coords 6352.172 8.476 5637.427
+  angleY 120.672
+ }
+ {
+  coords 6350.169 8.19 5634.041
+  angleY 120.672
+ }
+ {
+  coords 6348.14 7.894 5630.621
+  angleY 120.672
+ }
+ {
+  coords 6344.103 7.358 5623.819
+  angleY 120.672
+ }
+ {
+  coords 6336.048 7.178 5610.23
+  angleY 120.672
+ }
+ {
+  coords 6342.093 7.168 5620.427
+  angleY 120.672
+ }
+ {
+  coords 6340.09 7.1 5617.042
+  angleY 120.672
+ }
+ {
+  coords 6338.061 7.125 5613.622
+  angleY 120.672
+ }
+ {
+  coords 6334.071 7.156 5606.896
+  angleY 120.672
+ }
+ {
+  coords 6351.134 11.981 5635.684
+  angleY 120.672
+ }
+ {
+  coords 6349.106 11.702 5632.264
+  angleY 120.672
+ }
+ {
+  coords 6339.235 10.795 5615.599
+  angleY 120.672
+ }
+ {
+  coords 6337.207 10.84 5612.179
+  angleY 120.672
+ }
+}
+$grp GenericEntity : "{9ABAFFCBC76D824B}Prefabs/Props/Civilian/NoticeBoardCork_01.et" {
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{6308A1858CE42925}" {
+      SourceMaterial "NoticeBoardCork_01"
+      AssignedMaterial "{238912DEB799ABBF}Assets/Props/Civilian/NoticeBoardCork_01/Data/RulesTexture_01.emat"
+     }
+    }
+   }
+  }
+  coords 6349.826 94.204 5634.107
+  angleY -59.288
+  scale 4.191
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{6308A1858CE42925}" {
+      SourceMaterial "NoticeBoardCork_01"
+      AssignedMaterial "{238912DEB799ABBF}Assets/Props/Civilian/NoticeBoardCork_01/Data/RulesTexture_01.emat"
+     }
+    }
+   }
+  }
+  coords 6337.928 94.257 5614.022
+  angleY -59.288
+  scale 4.191
+ }
+}
+GenericEntity : "{C29B6482BE308E91}Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_Russia.et" {
+ components {
+  SCR_FlagComponent "{5E3C95A1E1EE9681}" {
+   m_sDefaultMaterial "{7B50A913C4A61DAF}Assets/Props/Fabric/Flags/Data/Flag_2_3_NationOfEveron.emat"
+  }
+ }
+ coords 6342.894 95.391 5621.589
+ angleY -61.701
+}
+$grp SCR_DestructibleEntity : "{C50DFD7AEBFFB3F3}PrefabLibrary/Props/Decoration/FlowerpotStreet_01_rect_long/FlowerpotStreet_01_rect_long_begonia_red.et" {
+ {
+  coords 6337.846 91.718 5650.895
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6336.165 91.718 5648.078
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6332.854 91.714 5642.493
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6334.536 91.714 5645.311
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6325.664 91.72 5630.405
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6331.183 91.724 5639.694
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6329.502 91.724 5636.875
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6324.028 91.718 5627.581
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6320.677 91.728 5621.964
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6318.995 91.728 5619.145
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6317.366 91.724 5616.381
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6322.346 91.718 5624.762
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6330.336 91.718 5638.281
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6337 91.712 5649.482
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6335.318 91.712 5646.666
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6333.69 91.708 5643.897
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6332.008 91.708 5641.081
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6324.851 91.718 5629.001
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6318.198 91.724 5617.795
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6319.829 91.728 5620.558
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6321.519 91.728 5623.373
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6323.19 91.718 5626.17
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+}
+GenericEntity : "{CBDBCDB407C75872}Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_Ussr.et" {
+ coords 6345.556 95.355 5626.237
+ angleY -63.488
+}
+$grp GenericEntity : "{FA188839C5E6DAD3}Prefabs/Structures/BuildingParts/Entry/Entry_Direct_01_narrow.et" {
+ {
+  components {
+   Hierarchy "{5488F0388A297CDE}" {
+    Enabled 1
+    PivotID "socket_entry_02"
+    AutoTransform 1
+   }
+  }
+  coords 6350.256 93.528 5644.2
+  angleY -59.288
+ }
+ {
+  components {
+   Hierarchy "{5488F0388A297CDE}" {
+    Enabled 1
+    PivotID "socket_entry_02"
+    AutoTransform 1
+   }
+  }
+  coords 6329.132 93.522 5608.707
+  angleY -59.288
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{FDB73CBC36C9FE21}PrefabLibrary/Infrastructure/Bridges/ConcreteBridge_01_Pillar.et" {
+ {
+  coords 6333.229 86.48 5612.542
+  angleY -149.288
+ }
+ {
+  coords 6339.497 86.495 5623.08
+  angleY -149.288
+ }
+ {
+  coords 6345.782 86.491 5633.651
+  angleY -149.288
+ }
+ {
+  coords 6348.856 86.488 5638.83
+  angleY -149.288
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E5B87255DE4D99D3}PrefabsEditable/Auto/Props/Military/Compositions/USSR/E_VehicleService_USSR_Large.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

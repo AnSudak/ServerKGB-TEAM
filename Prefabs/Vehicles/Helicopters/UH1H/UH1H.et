@@ -7,12 +7,6 @@ Vehicle : "{D03C0F6044DB5208}Prefabs/Vehicles/Helicopters/UH1H/UH1H_base.et" {
     m_aAutoLabels {
      10 122
     }
-    m_EntityBudgetCost {
-     SCR_EntityBudgetValue "{5EF07CE9B4A73374}" {
-      m_BudgetType RANK_PRIVATE
-      m_Value 1
-     }
-    }
    }
   }
   SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {

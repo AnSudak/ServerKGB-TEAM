@@ -1,0 +1,274 @@
+StaticModelEntity : "{11992F1ACB53D74C}Prefabs/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m_C.et" {
+ coords 6323.595 4.746 5598.872
+ angleY 31.124
+ scale 2.146
+}
+$grp StaticModelEntity : "{A027B45306A1E311}Prefabs/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_8m.et" {
+ {
+  coords 6348.383 6.682 5658.565
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6333.438 5.612 5667.322
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6303.538 4.369 5684.842
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6318.485 4.789 5676.087
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6288.59 4.298 5693.591
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6273.647 4.406 5702.342
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6234.992 4.996 5650.786
+  angleY 30.449
+  scale 2.142
+ }
+ {
+  coords 6308.863 4.065 5607.515
+  angleY 30.449
+  scale 2.142
+ }
+ {
+  coords 6294.102 3.688 5616.165
+  angleY 30.449
+  scale 2.142
+ }
+ {
+  coords 6279.318 3.606 5624.829
+  angleY 30.449
+  scale 2.142
+ }
+ {
+  coords 6264.562 3.856 5633.475
+  angleY 30.449
+  scale 2.142
+ }
+ {
+  coords 6249.781 4.382 5642.123
+  angleY 30.449
+  scale 2.142
+ }
+ {
+  coords 6253.456 4.735 5689.863
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  coords 6210.192 4.836 5616.002
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  coords 6218.873 4.904 5630.75
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  coords 6227.526 5.003 5645.542
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  coords 6236.142 5.003 5660.317
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  coords 6244.807 4.882 5675.101
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  coords 6258.752 4.443 5711.076
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6213.907 5.85 5737.353
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6228.854 5.286 5728.598
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6243.807 4.529 5719.833
+  angleY 30.449
+  scale 2.164
+ }
+ {
+  coords 6394.25 2.977 5575.288
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  coords 6388.489 2.435 5565.431
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  components {
+   MeshObject "{5936E5AA56187F89}" {
+    Object "{692C9C0B7FD80562}Assets/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m_90.xob"
+   }
+  }
+  coords 6383.223 2.048 5563.928
+  angleY 30.449
+  scale 2.142
+ }
+ {
+  components {
+   MeshObject "{5936E5AA56187F89}" {
+    Object "{EE2AD3E016C2C4F9}Assets/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m.xob"
+   }
+  }
+  coords 6374.262 1.375 5569.099
+  angleY 30.449
+  scale 2.142
+ }
+ {
+  components {
+   MeshObject "{5936E5AA56187F89}" {
+    Object "{6D5ADDCFB1D5666D}Assets/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_End_Right.xob"
+   }
+  }
+  coords 6402.888 3.661 5589.998
+  angleY -59.551
+  scale 2.142
+ }
+ {
+  components {
+   MeshObject "{5936E5AA56187F89}" {
+    Object "{EE2AD3E016C2C4F9}Assets/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m.xob"
+   }
+  }
+  coords 6375.799 1.528 5568.206
+  angleY 30.449
+  scale 2.142
+ }
+}
+StaticModelEntity : "{EF486A9BBF794809}Prefabs/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m_90.et" {
+ coords 6432.883 1.856 5609.783
+ angleX 0.754
+ angleY 30.008
+ angleZ 4.657
+ scale 3.006
+}
+$grp StaticModelEntity : "{F40563E3C7B64027}Prefabs/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m_B.et" {
+ {
+  coords 6440.657 1.78 5612.262
+  angleX 3.895
+  angleY -59.517
+  angleZ 7.088
+  scale 2.898
+ }
+ {
+  coords 6330.945 5.227 5594.447
+  angleX 0.339
+  angleY 30.508
+  angleZ 7.058
+  scale 2.146
+ }
+ {
+  coords 6337.461 4.722 5590.606
+  angleX 0.339
+  angleY 30.508
+  angleZ 7.058
+  scale 2.146
+ }
+ {
+  coords 6344.814 3.901 5586.289
+  angleX 0.339
+  angleY 30.508
+  angleZ 7.058
+  scale 2.146
+ }
+ {
+  coords 6352.165 2.772 5581.987
+  angleX 0.604
+  angleY 30.491
+  angleZ 6.227
+  scale 2.146
+ }
+ {
+  coords 6359.523 1.663 5577.694
+  angleX 0.604
+  angleY 30.491
+  angleZ 6.227
+  scale 2.146
+ }
+ {
+  coords 6366.876 1.314 5573.387
+  angleX 0.604
+  angleY 30.491
+  angleZ 6.227
+  scale 2.146
+ }
+ {
+  coords 6363.638 7.058 5650.428
+  angleX 0.191
+  angleY 30.491
+  angleZ 6.173
+  scale 3.095
+ }
+ {
+  coords 6369.375 6.717 5647.059
+  angleX 0.339
+  angleY 30.508
+  angleZ 7.058
+  scale 3.095
+ }
+ {
+  coords 6379.945 5.634 5640.871
+  angleX 0.604
+  angleY 30.491
+  angleZ 6.227
+  scale 3.095
+ }
+ {
+  coords 6390.567 4.904 5634.681
+  angleX 0.604
+  angleY 30.491
+  angleZ 6.227
+  scale 3.095
+ }
+ {
+  coords 6401.141 4.292 5628.509
+  angleX 0.604
+  angleY 30.491
+  angleZ 6.227
+  scale 3.095
+ }
+ {
+  coords 6411.757 3.57 5622.306
+  angleX 0.604
+  angleY 30.491
+  angleZ 6.227
+  scale 3.095
+ }
+ {
+  coords 6422.366 2.687 5616.109
+  angleX 0.604
+  angleY 30.491
+  angleZ 6.227
+  scale 3.095
+ }
+}

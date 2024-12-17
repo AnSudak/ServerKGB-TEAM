@@ -1,20 +1,42 @@
 GenericEntity : "{62AFF7A02EE209F9}Prefabs/Props/Military/Compositions/VehicleService_base.et" {
  ID "F0DBA538AC2A0552"
  components {
-  MeshObject "{5872F0EB7FA40561}" {
-   Object "{3867B82950462875}Assets/Props/Military/InteractionPoints/VehicleService/VehicleService_Barrels_USSR_01.xob"
+  SCR_CampaignBuildingProviderComponent "{5ED49CDEA85A0083}" {
+   m_aBudgetsToEvaluate {
+    SCR_CampaignBuildingCooldownWithRankBudgetToEvaluateData "{5EE71CAB5BFCF9A3}" {
+     m_aCustomCooldownData {
+      SCR_CooldownData "{5EEEF52515996867}" {
+       m_fDefaultTimeMultiplier 0
+      }
+      SCR_CooldownData "{5EEEF5250BF881BF}" {
+       m_fDefaultTimeMultiplier 0
+      }
+      SCR_CooldownData "{5EEEF5250BBA697C}" {
+       m_fDefaultTimeMultiplier 0
+      }
+      SCR_CooldownData "{5EEEF5250B54777E}" {
+       m_fDefaultTimeMultiplier 0
+      }
+      SCR_CooldownData "{5EEEF5250B763DE5}" {
+       m_fDefaultTimeMultiplier 0
+      }
+      SCR_CooldownData "{5EEEF52574D7AC41}" {
+       m_fDefaultTimeMultiplier 0
+      }
+      SCR_CooldownData "{5EEEF5255ABE05CA}" {
+       m_fDefaultTimeMultiplier 0
+      }
+     }
+    }
+   }
+   m_aAvailableTraits + {
+    54 53 51
+   }
   }
   SCR_CatalogEntitySpawnerComponent "{5D22B968F23A847A}" {
-   m_eType LIGHT_VEHICLE_DEPOT
-   m_eBuildingLabel SERVICE_VEHICLE_DEPOT_LIGHT
-   m_sDelegatePrefab "{5B423F7ACE06881D}Prefabs/Systems/Services/ServicePointDelegate_VehicleDepotLight.et"
-   m_aCatalogTypes {
-    30
+   m_aAllowedLabels {
+    50 54 53 51
    }
-   m_bNeedAllLabels 0
-  }
-  SCR_FactionAffiliationComponent "{5D22B92ED0ABBFD4}" {
-   "faction affiliation" "USSR"
   }
  }
 }

@@ -1,0 +1,10 @@
+GenericEntity : "{7C93700E1AC4C387}Prefabs/Props/Military/Arsenal/AmmoBoxes/USSR/AmmoBoxArsenal_Medical_USSR.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_ResourceComponent "{5DACFA5343CF2065}" {
+   m_aDisabledResourceTypes {
+    0
+   }
+  }
+ }
+}

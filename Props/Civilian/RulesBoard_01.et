@@ -1,0 +1,34 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{62C27FEBF2823AE3}Assets/Props/Civilian/NoticeBoardCork_01/NoticeBoardCork_01.xob"
+   Materials {
+    MaterialAssignClass "{62EEA23AB77F3DBA}" {
+     SourceMaterial "NoticeBoardCork_01"
+     AssignedMaterial "{238912DEB799ABBF}Assets/Props/Civilian/NoticeBoardCork_01/Data/RulesTexture_01.emat"
+    }
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ResponseIndex "TinyDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" : "{76DA308CC9E2AB84}Prefabs/Props/Core/DestructionMultiPhase_Base.ct" {
+   m_fBaseHealth 300
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{62EEA2393377546A}" {
+     m_ModelPrefabs {
+      "{8A1508D63AB78ABE}Assets/Props/Civilian/NoticeBoardCork_01/Dst/NoticeBoardCork_01_Dst_01.xob" "{130BB14F2750BB2E}Assets/Props/Civilian/NoticeBoardCork_01/Dst/NoticeBoardCork_01_Dst_02.xob"
+     }
+     m_fMass 1
+     m_fDamageToImpulse 3
+     m_fRandomVelocityLinear 3
+     m_eMaterialSoundType WOOD_PLANK_SMALL
+    }
+   }
+  }
+ }
+ coords 0 0 0
+}

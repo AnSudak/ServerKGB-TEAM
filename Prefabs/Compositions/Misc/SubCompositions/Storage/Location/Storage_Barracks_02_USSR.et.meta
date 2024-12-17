@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{ED95BC9B8DADCD8D}Prefabs/Compositions/Misc/SubCompositions/Storage/Location/Storage_Barracks_02_USSR.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

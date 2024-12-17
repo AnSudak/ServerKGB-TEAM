@@ -1,0 +1,174 @@
+$grp SCR_DestructibleEntity : "{2DAC8D663D5F3E2E}Prefabs/Props/Commercial/MarketStand_01_Umbrella.et" {
+ {
+  coords 6250.5 91.738 5668.271
+  angleY -15.697
+ }
+ {
+  coords 6247.444 91.738 5663.151
+  angleY -15.239
+ }
+ {
+  coords 6244.406 91.738 5658.013
+  angleY -13.837
+ }
+}
+SCR_DestructibleBuildingEntity : "{2F830B9B3A7D4855}Prefabs/Structures/Commercial/Shops/ShopHouse_E_2I01t_foodstore.et" {
+ coords 6258.382 5.109 5656.854
+ angleY -59.551
+}
+GenericEntity : "{53773B57CB3AF497}Prefabs/Props/Commercial/Posters/PosterSingle_A1_Cans_V3.et" {
+ coords 6265.424 95.381 5659.759
+ angleY 30.095
+ scale 2
+}
+GenericEntity : "{69A8FFE5527CB776}Prefabs/Structures/BuildingParts/Entry/Entry_Direct_01.et" {
+ components {
+  Hierarchy "{5488F0388A297CDE}" {
+   Enabled 1
+   PivotID "socket_entry_01"
+   AutoTransform 1
+  }
+ }
+ coords 6257.514 92.792 5666.252
+ angleY -60
+}
+GenericEntity : "{6E431E6FBE567DA0}Prefabs/Props/Commercial/Posters/PosterSingle_A1_Cans_V4.et" {
+ coords 6262.071 95.395 5661.726
+ angleY 30
+ scale 2
+}
+GenericEntity : "{AE73676ABA995907}Prefabs/Structures/BuildingParts/Entry/Entry_Block_Platform_01_3x12.et" {
+ components {
+  Hierarchy "{5488F0388A297CDE}" {
+   Enabled 1
+   PivotID "socket_entry_01"
+   AutoTransform 1
+  }
+ }
+ coords 6263.309 92.949 5662.833
+ angleY 30
+ scale 1.1
+}
+GenericEntity : "{B6EB77AEC7DF63FC}Prefabs/Props/Commercial/Posters/PosterSingle_A1_Cans_V2.et" {
+ coords 6258.824 95.401 5663.658
+ angleY 30
+ scale 2
+}
+$grp SCR_DestructibleEntity : "{C50DFD7AEBFFB3F3}PrefabLibrary/Props/Decoration/FlowerpotStreet_01_rect_long/FlowerpotStreet_01_rect_long_begonia_red.et" {
+ {
+  coords 6250.696 91.738 5660.286
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6252.212 91.738 5662.874
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+ {
+  coords 6253.715 91.74 5665.438
+  angleX -0.001
+  angleY -59.288
+  angleZ 0.001
+ }
+}
+$grp SCR_DestructibleEntity : "{C8A5C92E74ABB5EA}Prefabs/Props/Civilian/PicnicTable/PicnicTable_01.et" {
+ {
+  coords 6247.464 91.784 5663.156
+  angleY -58.803
+ }
+ {
+  coords 6250.519 91.824 5668.274
+  angleY -58.803
+ }
+ {
+  coords 6244.407 91.768 5658.011
+  angleY -58.803
+ }
+}
+$grp SCR_DestructibleEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
+ {
+  coords 6264.791 92.828 5660.861
+  angleX -2.745
+  angleY 120.829
+  angleZ -0.448
+ }
+ {
+  coords 6266.691 92.959 5659.875
+  angleX 2.745
+  angleY -59.171
+  angleZ 0.448
+ }
+ {
+  coords 6266.234 92.949 5661.128
+  angleX 0.448
+  angleY -149.192
+  angleZ -2.745
+ }
+ {
+  coords 6263.287 93.01 5661.834
+  angleX 2.745
+  angleY -59.171
+  angleZ 0.448
+ }
+ {
+  coords 6262.83 93 5663.088
+  angleX 0.448
+  angleY -149.192
+  angleZ -2.745
+ }
+ {
+  coords 6261.387 92.879 5662.821
+  angleX -2.745
+  angleY 120.829
+  angleZ -0.448
+ }
+ {
+  coords 6260.098 93.009 5663.759
+  angleX 2.745
+  angleY -59.171
+  angleZ 0.448
+ }
+ {
+  coords 6259.641 92.999 5665.012
+  angleX 0.448
+  angleY -149.192
+  angleZ -2.745
+ }
+ {
+  coords 6258.198 92.878 5664.745
+  angleX -2.745
+  angleY 120.829
+  angleZ -0.448
+ }
+}
+SCR_DestructibleBuildingEntity : "{E0C0B1A9E06C4212}Prefabs/Structures/Commercial/Shops/ShopModern_E_Terrace_01.et" {
+ coords 6265.807 5.949 5659.593
+ angleY 30.449
+}
+GenericEntity : "{E4DA6CFFCE8E5940}Prefabs/Props/Construction/ContainerMetal_01/ContainerMetal_01_green.et" {
+ coords 6270.27 91.721 5659.271
+ angleY 31.513
+}
+$grp GenericEntity : "{F5BFC5E30035C5D1}Prefabs/Props/Furniture/TableRecreation_01/TableRecreation_01_red.et" {
+ {
+  coords 6265.762 92.899 5660.318
+  angleX 1.499
+  angleY -59.593
+  angleZ 0.312
+ }
+ {
+  coords 6262.357 92.95 5662.278
+  angleX 1.499
+  angleY -59.593
+  angleZ 0.312
+ }
+ {
+  coords 6259.169 92.949 5664.202
+  angleX 1.499
+  angleY -59.593
+  angleZ 0.312
+ }
+}

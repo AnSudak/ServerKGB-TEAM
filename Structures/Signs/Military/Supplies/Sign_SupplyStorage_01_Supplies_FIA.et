@@ -1,0 +1,24 @@
+GenericEntity : "{934887E9F148A6FA}Prefabs/Structures/Signs/Military/Supplies/Sign_SupplyStorage_01_Supplies_base.et" {
+ ID "50D67C36F4200F97"
+ components {
+  MeshObject "{54969A6AAAADA251}" {
+   Materials {
+    MaterialAssignClass "{5E7AE023D6D2E639}" {
+     SourceMaterial "SignRectangle_01_75x45_double"
+     AssignedMaterial "{0EEE64C06B91806D}Assets/Structures/Signs/Military/Data/Sign_SupplyStorage_USSR_01.emat"
+    }
+    MaterialAssignClass "{5E7AE023D6D2E62C}" {
+     SourceMaterial "SignRectangle_01_75x45_double_MLOD"
+     AssignedMaterial "{EE7ED2DE61FF7776}Assets/Structures/Signs/Military/Data/Sign_SupplyStorage_USSR_01_MLOD.emat"
+    }
+   }
+  }
+  SCR_ResourceComponent "{5E3298BE225F0743}" {
+   m_aGenerators {
+    SCR_ResourceGenerator "{5E3298A9DB3BDCA7}" {
+     m_fResourceMultiplier 99999
+    }
+   }
+  }
+ }
+}

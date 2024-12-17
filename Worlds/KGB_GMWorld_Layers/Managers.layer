@@ -76,16 +76,17 @@ SCR_GameModeEditor GameMode_GameMaster : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edi
   SCR_FactionManager FactionManager {
    ID "56E685E92F1B7E7A"
    Factions {
+    SCR_Faction "{56DEAC40D2DBC8B1}" : "{5EB46557DF2AA24F}Configs/Factions/US.conf" {
+    }
     SCR_Faction "{56DEAC40D3C2E623}" : "{09727032415AC39C}Configs/Factions/USSR.conf" {
      m_bIsPlayable 1
      m_aEntityCatalogs {
-      SCR_EntityCatalogMultiList "{6320704F404C554A}" {
+      SCR_EntityCatalogMultiList "{6322486D1A25A6EA}" {
        m_aMultiLists {
         SCR_EntityCatalogMultiListEntry "{632029A213AADD2E}" {
          m_aEntities {
-          SCR_EntityCatalogEntry "{632029ADA1F04D7A}" {
-          }
           SCR_EntityCatalogEntry "{63202994B7C5EF9C}" {
+           m_bEnabled 0
           }
          }
         }
@@ -95,6 +96,18 @@ SCR_GameModeEditor GameMode_GameMaster : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edi
     }
    }
   }
+  SCR_LoadoutManager {
+   ID "56E685E92F1B7E2A"
+   m_aPlayerLoadouts {
+    SCR_FactionPlayerLoadout "{5596D8455CFBE540}" {
+     m_sLoadoutResource "{2A7BDFC986AD4DD9}Assets/Characters/Character_Unarmed.et"
+    }
+   }
+  }
+ }
+}
+SCR_MapLocator {
+ m_WorldDirections SCR_MapLocationQuadHint "{5AAA92CD91D1D8F5}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
  }
 }
 MusicManager : "{359452CCDBDD03F5}Prefabs/Sounds/Music/MusicManager_Campaign.et" {

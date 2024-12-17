@@ -1,25 +1,10 @@
 GenericEntity : "{AD59EDEAA26CE792}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR.et" {
  ID "56F2C6D6F7C6DAFA"
  components {
-  MeshObject "{56F2C6D1431AD85A}" {
-   Materials {
-    MaterialAssignClass "{632029BF581B28A9}" {
-     SourceMaterial "ArsenalBox_01_Decal"
-     AssignedMaterial "{92EC7BAFC94B5547}Assets/Props/Military/AmmoBox/ArsenalBox_01/Data/ArsenalBox_01_Decal_USSR_equip.emat"
-    }
-   }
-  }
   SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-   m_eSupportedArsenalItemTypes 654528
-  }
-  UniversalInventoryStorageComponent "{56F2C6D15FE6C4CE}" {
-   Attributes SCR_ItemAttributeCollection "{56F2C6D6A36680FB}" {
-    ItemDisplayName SCR_InventoryUIInfo "{56F2C6D6A229E091}" {
-     Name "#AR-EditableEntity_ArsenalEquipment_01_USSR_Name"
-    }
-   }
+   m_eSupportedArsenalItemTypes 654464
+   m_bAllowGetFactionFromParent 1
+   m_eArsenalSaveType NO_RESTRICTIONS
   }
  }
- coords 0.008 0.1 3.072
- angleY -11.822
 }
