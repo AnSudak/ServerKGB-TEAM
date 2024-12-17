@@ -21,6 +21,8 @@ PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
 }
 SCR_GameModeEditor GameMode_GameMaster : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
  components {
+  PGT_TriggerManagerComponent "{63230CC6A72E5E8A}" {
+  }
   SCR_EditorCameraDefaultsComponent "{531111508B1D17BA}" {
    m_aPositions {
     SCR_CameraCoordinates "{531111517085ECC9}" {
@@ -96,11 +98,37 @@ SCR_GameModeEditor GameMode_GameMaster : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edi
     }
    }
   }
+  SCR_BaseTaskManager {
+   ID "56E685E92F1B7FAB"
+   {
+    SCR_ScenarioFrameworkTaskClearAreaSupportEntity {
+     coords -4577.328 36.83 -11440.018
+    }
+    SCR_ScenarioFrameworkTaskDefendSupportEntity {
+     coords -4577.026 43.822 -11411.145
+    }
+    SCR_ScenarioFrameworkTaskDeliverSupportEntity {
+     coords -4579.414 36.857 -11440.787
+    }
+    SCR_ScenarioFrameworkTaskDestroySupportEntity {
+     coords -4556.995 37.059 -11430.154
+    }
+    SCR_ScenarioFrameworkTaskExtractSupportEntity {
+     coords -4569.168 47.518 -11390.98
+    }
+    SCR_ScenarioFrameworkTaskKillSupportEntity {
+     coords -4602.553 53.718 -11381.62
+    }
+    SCR_ScenarioFrameworkTaskSupportEntity {
+     coords -4575.278 32.421 -11457.251
+    }
+   }
+  }
   SCR_LoadoutManager {
    ID "56E685E92F1B7E2A"
    m_aPlayerLoadouts {
     SCR_FactionPlayerLoadout "{5596D8455CFBE540}" {
-     m_sLoadoutResource "{2A7BDFC986AD4DD9}Assets/Characters/Character_Unarmed.et"
+     m_sLoadoutResource "{2A7BDFC986AD4DD9}Prefabs/Characters/Character_Unarmed.et"
     }
    }
   }
