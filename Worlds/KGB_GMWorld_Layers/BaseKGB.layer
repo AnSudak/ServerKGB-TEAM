@@ -53,24 +53,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        coords 50.835 1.902 61.535
        angleY 29.748
       }
-      Slot5 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{2F17BFBCDB329CCA}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Weapons.et"
-        }
-       }
-       coords 53.325 1.873 63.666
-       angleY -61.021
-      }
-      Slot6 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Equipment.et"
-        }
-       }
-       coords 54.868 1.897 66.454
-       angleY -61.021
-      }
       Slot7 {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
@@ -467,8 +449,4 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
-}
-GenericEntity : "{DBD178AE8D6F0075}Prefabs/Props/Military/Compositions/USSR/VehicleService_USSR.et" {
- coords 6376.191 85.779 5561.598
- angleY 121.231
 }
