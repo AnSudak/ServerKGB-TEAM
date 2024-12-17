@@ -1,0 +1,1624 @@
+GenericEntity StPierre : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  PGT_TriggerComponent "{6316B08826F10B23}" {
+   m_Name "Сант-Пьер"
+   m_LayerName "StPierre"
+   m_TaskList {
+    "StTask1"
+   }
+  }
+  PGT_TriggerCoreComponent "{6316B088273B849B}" {
+  }
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_eActivationType ON_TRIGGER_ACTIVATION
+  }
+ }
+ coords 9695.461 14.198 1546.815
+ {
+  $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   StTask1 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_aActivationActions {
+       SCR_ScenarioFrameworkActionSpawnObjects "{63230CC926239DD1}" {
+        m_aNameOfObjectsToSpawnOnActivation {
+         "LayerTaskDestroy10" "LayerTaskDestroy3"
+        }
+       }
+      }
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+      LayerTaskDestroy3 {
+       components {
+        SCR_ScenarioFrameworkLayerTaskDestroy "{5A6513F41BA457C8}" {
+         m_sFactionKey "USSR"
+         m_eActivationType ON_TRIGGER_ACTIVATION
+         m_aTriggerActionsOnFinish {
+          SCR_ScenarioFrameworkActionIncrementCounter "{630EAD7CAEF23C32}" {
+           m_sCounterName "LogicCounter2"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+       {
+        SCR_ScenarioFrameworkLogicCounter LogicCounter2 : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+         coords 0 0 0
+         m_iCountTo 2
+         m_aOnIncreaseActions {
+          SCR_ScenarioFrameworkActionCompareCounterAndExecute "{630EAD7CE284E9EB}" {
+           m_eComparisonOperator EQUAL
+           m_iValue 2
+           m_sCounterName "LogicCounter2"
+           m_aActions {
+            SCR_ScenarioFrameworkActionSpawnObjects "{630EAD7CF1EBDC79}" {
+             m_aNameOfObjectsToSpawnOnActivation {
+              "Podkrep4" "StTask2"
+             }
+            }
+           }
+          }
+         }
+        }
+        GenericEntity SlotDestroy9 : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          SCR_ScenarioFrameworkSlotDestroy "{5A22E1D6276BD209}" {
+           m_sObjectToSpawn "{2BE1F8B9299B67C1}Prefabs/Vehicles/Wheeled/M923A1/M923A1_tanker.et"
+          }
+         }
+         coords 25.307 8.335 178.552
+         angleY -56.044
+        }
+       }
+      }
+      LayerTaskDestroy10 {
+       components {
+        SCR_ScenarioFrameworkLayerTaskDestroy "{5A6513F41BA457C8}" {
+         m_sFactionKey "USSR"
+         m_eActivationType ON_TRIGGER_ACTIVATION
+         m_aTriggerActionsOnFinish {
+          SCR_ScenarioFrameworkActionIncrementCounter "{630EAD7CA079D122}" {
+           m_sCounterName "LogicCounter2"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity SlotDestroy10 : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          SCR_ScenarioFrameworkSlotDestroy "{5A22E1D6276BD209}" {
+           m_sObjectToSpawn "{2BE1F8B9299B67C1}Prefabs/Vehicles/Wheeled/M923A1/M923A1_tanker.et"
+          }
+         }
+         coords 21.955 8.031 169.379
+         angleY 132.53
+        }
+       }
+      }
+     }
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      Podkrep4 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI58 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+             m_aLayerName {
+              "WaypointATtack5"
+             }
+            }
+            m_eAISkill EXPERT
+            m_fPerceptionFactor 50
+            m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           }
+          }
+          coords -107.537 75.412 468.43
+         }
+         SlotAI71 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+             m_aLayerName {
+              "WaypointATtack5"
+             }
+            }
+            m_eAISkill EXPERT
+            m_fPerceptionFactor 50
+            m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           }
+          }
+          coords -313.831 101.555 -200.115
+         }
+         SlotAI72 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+             m_aLayerName {
+              "WaypointATtack5"
+             }
+            }
+            m_eAISkill EXPERT
+            m_fPerceptionFactor 50
+            m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           }
+          }
+          coords -96.895 85.457 -377.1
+         }
+         SlotAI73 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+             m_aLayerName {
+              "WaypointATtack5"
+             }
+            }
+            m_eAISkill EXPERT
+            m_fPerceptionFactor 50
+            m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           }
+          }
+          coords 58.854 82.926 -604.628
+         }
+         SlotAI74 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+             m_aLayerName {
+              "WaypointATtack5"
+             }
+            }
+            m_eAISkill EXPERT
+            m_fPerceptionFactor 50
+            m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           }
+          }
+          coords 220.752 13.139 -441.732
+         }
+         SlotAI75 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+             m_aLayerName {
+              "WaypointATtack5"
+             }
+            }
+            m_eAISkill EXPERT
+            m_fPerceptionFactor 50
+            m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           }
+          }
+          coords 320.15 37.33 192.478
+         }
+         SlotAI76 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+             m_aLayerName {
+              "WaypointATtack5"
+             }
+            }
+            m_eAISkill EXPERT
+            m_fPerceptionFactor 50
+            m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           }
+          }
+          coords 707.941 12.569 183.52
+         }
+         SlotAI77 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+             m_aLayerName {
+              "WaypointATtack5"
+             }
+            }
+            m_eAISkill EXPERT
+            m_fPerceptionFactor 50
+            m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           }
+          }
+          coords 220.752 3.463 -419.839
+         }
+        }
+        GenericEntity WaypointATtack5 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         components {
+          SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+           m_Waypoint SCR_ScenarioFrameworkWaypointAttack "{6316B08AA202F4E3}" {
+            m_fCompletionRadius 130
+           }
+          }
+         }
+         coords 0 -0.077 0
+        }
+       }
+      }
+      AI2 {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI78 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "WaypointDefend2"
+             }
+            }
+           }
+          }
+          coords 40.602 0.396 -107.817
+         }
+         SlotAI79 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "WaypointDefend2"
+             }
+            }
+           }
+          }
+          coords 92.59 -4.356 24.383
+         }
+         SlotAI80 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint6"
+             }
+            }
+           }
+          }
+          coords 27.262 6.651 139.846
+         }
+         SlotAI81 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint6"
+             }
+            }
+           }
+          }
+          coords -48.027 4.069 58.755
+         }
+         SlotAI82 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint6"
+             }
+            }
+           }
+          }
+          coords -104.209 9.61 25.806
+         }
+         SlotAI83 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint7"
+             }
+            }
+           }
+          }
+          coords -68.344 9.875 -99.517
+         }
+         SlotAI84 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint7"
+             }
+            }
+           }
+          }
+          coords 25.231 -3.359 -25.546
+         }
+         SlotAI85 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint7"
+             }
+            }
+           }
+          }
+          coords -77.028 5.586 48.341
+         }
+         SlotAI86 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint7"
+             }
+            }
+           }
+          }
+          coords 143.017 -9.21 -176.128
+         }
+         SlotAI87 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint7"
+             }
+            }
+           }
+          }
+          coords 41.473 1.816 -123.768
+         }
+         SlotAI88 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint7"
+             }
+            }
+           }
+          }
+          coords 131.911 -9.261 -191.071
+         }
+         SlotAI89 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint8"
+             }
+            }
+           }
+          }
+          coords 90.522 -8.873 -141.676
+         }
+         SlotAI90 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint8"
+             }
+            }
+           }
+          }
+          coords -129.12 10.518 24.935
+         }
+         SlotAI91 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint8"
+             }
+            }
+           }
+          }
+          coords 57.188 -8.519 -12.311
+         }
+         SlotAI92 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint8"
+             }
+            }
+           }
+          }
+          coords 177.51 -4.144 19.754
+         }
+         SlotAI93 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint8"
+             }
+            }
+           }
+          }
+          coords 104.646 -8.857 -147.136
+         }
+         SlotAI94 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint9"
+             }
+            }
+           }
+          }
+          coords -108.735 9.839 27.537
+         }
+         SlotAI95 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint9"
+             }
+            }
+           }
+          }
+          coords -49.921 7.638 117.288
+         }
+         SlotAI96 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint9"
+             }
+            }
+           }
+          }
+          coords -87.905 8.328 75.679
+         }
+         SlotAI97 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint9"
+             }
+            }
+           }
+          }
+          coords 91.017 2.674 143.72
+         }
+         SlotAI98 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "WaypointDefend2"
+             }
+            }
+           }
+          }
+          coords -54.449 3.029 116.067
+         }
+         SlotAI99 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "WaypointDefend2"
+             }
+            }
+           }
+          }
+          coords 252.597 -10.852 46.303
+         }
+         SlotAI100 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint6"
+             }
+            }
+           }
+          }
+          coords 125.535 -4.975 87.357
+         }
+         SlotAI101 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "SlotWaypoint6"
+             }
+            }
+           }
+          }
+          coords 21.03 7.495 146.749
+         }
+         SlotAI102 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{630EAD7A778FB4E4}" {
+             m_aLayerName {
+              "WaypointDefend2"
+             }
+            }
+           }
+          }
+          coords 155.423 -6.768 67.409
+         }
+        }
+        $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         WaypointDefend2 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_Waypoint SCR_ScenarioFrameworkWaypointDefendLarge "{630EAD7A41F45CD1}" {
+             m_fCompletionRadius 150
+            }
+           }
+          }
+          coords -2.25 -0.995 4.814
+         }
+         SlotWaypoint6 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_Waypoint SCR_ScenarioFrameworkWaypointDefendLarge "{630EAD7A41F45CD1}" {
+             m_fCompletionRadius 80
+            }
+           }
+          }
+          coords 99.379 -8.509 -148.819
+         }
+         SlotWaypoint7 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_Waypoint SCR_ScenarioFrameworkWaypointDefendLarge "{630EAD7A41F45CD1}" {
+             m_fCompletionRadius 80
+            }
+           }
+          }
+          coords -99.344 10.083 -10.837
+         }
+         SlotWaypoint8 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_Waypoint SCR_ScenarioFrameworkWaypointDefendLarge "{630EAD7A41F45CD1}" {
+             m_fCompletionRadius 80
+            }
+           }
+          }
+          coords 11.575 6.983 63.608
+         }
+         SlotWaypoint9 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_Waypoint SCR_ScenarioFrameworkWaypointDefendLarge "{630EAD7A41F45CD1}" {
+             m_fCompletionRadius 80
+            }
+           }
+          }
+          coords 154.745 -6.702 72.711
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+   StTask2 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+     }
+    }
+    coords 0.733 0.001 0.339
+    {
+     $grp GenericEntity : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+      LayerTaskDestroy11 {
+       components {
+        SCR_ScenarioFrameworkLayerTaskDestroy "{5A6513F41BA457C8}" {
+         m_sFactionKey "USSR"
+         m_aTriggerActionsOnFinish {
+          SCR_ScenarioFrameworkActionIncrementCounter "{630EAD7CAEF23C32}" {
+           m_sCounterName "LogicCounter5"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+       {
+        SCR_ScenarioFrameworkLogicCounter LogicCounter5 : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+         coords 0 0 0
+         m_iCountTo 2
+         m_aOnIncreaseActions {
+          SCR_ScenarioFrameworkActionCompareCounterAndExecute "{630EAD7CE284E9EB}" {
+           m_eComparisonOperator EQUAL
+           m_iValue 2
+           m_sCounterName "LogicCounter5"
+           m_aActions {
+            SCR_ScenarioFrameworkActionSpawnObjects "{630EAD7CF1EBDC79}" {
+             m_aNameOfObjectsToSpawnOnActivation {
+              "Podkrep5" "StTask3"
+             }
+            }
+           }
+          }
+         }
+        }
+        GenericEntity SlotDestroy11 : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          SCR_ScenarioFrameworkSlotDestroy "{5A22E1D6276BD209}" {
+           m_sObjectToSpawn "{EC657C9B3C73E192}Prefabs/Vehicles/Wheeled/M923A1/M923A1_ammo_MERDC.et"
+          }
+         }
+         coords 336.328 -11 40.903
+         angleY 106.241
+        }
+       }
+      }
+      LayerTaskDestroy12 {
+       components {
+        SCR_ScenarioFrameworkLayerTaskDestroy "{5A6513F41BA457C8}" {
+         m_sFactionKey "USSR"
+         m_aTriggerActionsOnFinish {
+          SCR_ScenarioFrameworkActionIncrementCounter "{630EAD7CA079D122}" {
+           m_sCounterName "LogicCounter5"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity SlotDestroy12 : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          SCR_ScenarioFrameworkSlotDestroy "{5A22E1D6276BD209}" {
+           m_sObjectToSpawn "{EC657C9B3C73E192}Prefabs/Vehicles/Wheeled/M923A1/M923A1_ammo_MERDC.et"
+          }
+         }
+         coords 337.524 -10.989 45.8
+         angleY 110.227
+        }
+       }
+      }
+     }
+     GenericEntity Podkrep5 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      components {
+       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+        m_eActivationType ON_TRIGGER_ACTIVATION
+       }
+      }
+      coords 0 0 0
+      {
+       $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+        SlotAI103 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack6"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -615.737 144.804 -89.377
+        }
+        SlotAI104 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack6"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -155.812 131.654 -755.915
+        }
+        SlotAI105 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack6"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords 269.183 -0.599 -493.112
+        }
+        SlotAI106 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack6"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords 254.508 -1.949 -434.954
+        }
+        SlotAI107 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack6"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords 679.806 23.258 209.296
+        }
+        SlotAI108 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack6"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords 837.058 2.11 118.57
+        }
+        SlotAI109 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack6"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -128.459 73.249 474.759
+        }
+        SlotAI110 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack6"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords 221.192 1.769 -375.251
+        }
+       }
+       GenericEntity WaypointATtack6 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointAttack "{6316B08AA202F4E3}" {
+           m_fCompletionRadius 130
+          }
+         }
+        }
+        coords -12.111 2.096 27.127
+       }
+      }
+     }
+    }
+   }
+   StTask3 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+     }
+    }
+    coords 280.558 5.224 116.369
+    {
+     $grp GenericEntity : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+      LayerTaskDestroy13 {
+       components {
+        SCR_ScenarioFrameworkLayerTaskDestroy "{5A6513F41BA457C8}" {
+         m_sFactionKey "USSR"
+         m_aTriggerActionsOnFinish {
+          SCR_ScenarioFrameworkActionIncrementCounter "{630EAD7CAEF23C32}" {
+           m_sCounterName "LogicCounter6"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+       {
+        SCR_ScenarioFrameworkLogicCounter LogicCounter6 : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+         coords 0 0 0
+         m_iCountTo 2
+         m_aOnIncreaseActions {
+          SCR_ScenarioFrameworkActionCompareCounterAndExecute "{630EAD7CE284E9EB}" {
+           m_eComparisonOperator EQUAL
+           m_iValue 3
+           m_sCounterName "LogicCounter6"
+           m_aActions {
+            SCR_ScenarioFrameworkActionSpawnObjects "{630EAD7CF1EBDC79}" {
+             m_aNameOfObjectsToSpawnOnActivation {
+              "Podkrep6" "StTask4"
+             }
+            }
+           }
+          }
+         }
+        }
+        GenericEntity SlotDestroy13 : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          SCR_ScenarioFrameworkSlotDestroy "{5A22E1D6276BD209}" {
+           m_sObjectToSpawn "{1FF144F8A209239D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_arsenal.et"
+          }
+         }
+         coords -146.183 -14.485 -316.417
+         angleY 90.603
+        }
+       }
+      }
+      LayerTaskDestroy14 {
+       components {
+        SCR_ScenarioFrameworkLayerTaskDestroy "{5A6513F41BA457C8}" {
+         m_sFactionKey "USSR"
+         m_aTriggerActionsOnFinish {
+          SCR_ScenarioFrameworkActionIncrementCounter "{630EAD7CA079D122}" {
+           m_sCounterName "LogicCounter6"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity SlotDestroy14 : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          SCR_ScenarioFrameworkSlotDestroy "{5A22E1D6276BD209}" {
+           m_sObjectToSpawn "{1FF144F8A209239D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_arsenal.et"
+          }
+         }
+         coords 176.949 -13.235 -37.762
+         angleY -161.161
+        }
+       }
+      }
+      LayerTaskDestroy15 {
+       components {
+        SCR_ScenarioFrameworkLayerTaskDestroy "{5A6513F41BA457C8}" {
+         m_sFactionKey "USSR"
+         m_aTriggerActionsOnFinish {
+          SCR_ScenarioFrameworkActionIncrementCounter "{630EAD7CAEF23C32}" {
+           m_sCounterName "LogicCounter6"
+          }
+         }
+        }
+       }
+       coords 81.97 6.084 -114.999
+       {
+        GenericEntity SlotDestroy15 : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          SCR_ScenarioFrameworkSlotDestroy "{5A22E1D6276BD209}" {
+           m_sObjectToSpawn "{1FF144F8A209239D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_arsenal.et"
+          }
+         }
+         coords 47.155 -15.631 73.292
+         angleY 103.365
+        }
+       }
+      }
+     }
+     GenericEntity Podkrep6 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      components {
+       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+        m_eActivationType ON_TRIGGER_ACTIVATION
+       }
+      }
+      coords 0 0 0
+      {
+       $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+        SlotAI111 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack7"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords 123.484 61.391 197.751
+        }
+        SlotAI112 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack7"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -110.866 42.34 125.029
+        }
+        SlotAI113 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack7"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -462.867 49.398 -241.166
+        }
+        SlotAI114 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack7"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -389.954 82.04 402.981
+        }
+        SlotAI115 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack7"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -683.217 85.527 -233.906
+        }
+        SlotAI116 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack7"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -877.325 121.792 -31.363
+        }
+        SlotAI117 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack7"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -489.246 137.745 -379.584
+        }
+        SlotAI118 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack7"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -356.385 107.998 -559.102
+        }
+       }
+       GenericEntity WaypointATtack7 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointAttack "{6316B08AA202F4E3}" {
+           m_fCompletionRadius 130
+          }
+         }
+        }
+        coords -62.578 -16.963 -125.831
+        scale 2.51
+       }
+      }
+     }
+    }
+   }
+   StTask4 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+     }
+    }
+    coords 280.558 5.226 116.347
+    {
+     GenericEntity LayerTaskDestroy16 : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+      components {
+       SCR_ScenarioFrameworkLayerTaskDestroy "{5A6513F41BA457C8}" {
+        m_sFactionKey "USSR"
+        m_aTriggerActionsOnFinish {
+         SCR_ScenarioFrameworkActionSpawnObjects "{63230CDB48ACD921}" {
+          m_aNameOfObjectsToSpawnOnActivation {
+           "StTask5"
+          }
+         }
+        }
+       }
+      }
+      coords 210.349 -3.37 -208.762
+      {
+       GenericEntity SlotDestroy16 : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+        components {
+         SCR_ScenarioFrameworkSlotDestroy "{5A22E1D6276BD209}" {
+          m_sObjectToSpawn "{1FF144F8A209239D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_arsenal.et"
+         }
+        }
+        coords 7.525 -13.615 1.694
+        angleY -45.481
+       }
+      }
+     }
+     GenericEntity Layer3 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 0 0 0
+      {
+       $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+        SlotAI119 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -217.865 28.704 149.129
+        }
+        SlotAI120 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -79.2 19.411 117.246
+        }
+        SlotAI121 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords 392.904 23.743 43.619
+        }
+        SlotAI122 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -426.757 94.406 -357.069
+        }
+        SlotAI123 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -400.573 97.231 -388.022
+        }
+        SlotAI124 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -299.576 63.293 -452.154
+        }
+        SlotAI125 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -81.028 1.652 -499.553
+        }
+        SlotAI126 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -28.481 -7.394 -517.986
+        }
+        SlotAI127 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -53.544 13.661 -597.792
+        }
+        SlotAI128 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -131.294 30.826 -680.08
+        }
+        SlotAI129 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -284.331 110.708 -655.354
+        }
+        SlotAI130 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+            m_aLayerName {
+             "WaypointATtack8"
+            }
+           }
+           m_eAISkill EXPERT
+           m_fPerceptionFactor 50
+           m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+          }
+         }
+         coords -541.977 41.761 -201.902
+        }
+       }
+       GenericEntity WaypointATtack8 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointAttack "{6316B08AA202F4E3}" {
+           m_fCompletionRadius 50
+          }
+         }
+        }
+        coords -291.154 1.853 -43.131
+        scale 2.51
+       }
+      }
+     }
+    }
+   }
+   StTask5 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_aActivationActions {
+       SCR_ScenarioFrameworkActionWaitAndExecute "{63230CDD7DC70CCE}" {
+        m_iDelayInSeconds 60
+        m_iDelayInSecondsMax 60
+        m_aActions {
+         SCR_ScenarioFrameworkActionSpawnObjects "{63230CDD46BF3324}" {
+          m_aNameOfObjectsToSpawnOnActivation {
+           "Montigniac_FinalTask2"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    coords 0 0 0
+    {
+     GenericEntity Montigniac_FinalTask2 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      components {
+       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+        m_eActivationType ON_TRIGGER_ACTIVATION
+       }
+      }
+      coords 0 0 0
+      {
+       GenericEntity TaskDefendArea2 : "{2B0E0A06A4475EA3}Prefabs/ScenarioFramework/Compositions/LayerTasks/TaskDefendArea.et" {
+        components {
+         SCR_ScenarioFrameworkLayerTaskDefend "{5C52E161174024CB}" {
+          m_sTaskTitle "Удержать Церковь"
+          m_sTaskDescription "В сантпьере"
+          m_aTriggerActionsOnFinish {
+           SCR_ScenarioFrameworkActionWaitAndExecute "{632353662DE76287}" {
+            m_iDelayInSeconds 300
+            m_iDelayInSecondsMax 300
+            m_aActions {
+             SCR_ScenarioFrameworkActionRestoreLayerToDefault "{63230CE38D86BD10}" {
+              m_Getter SCR_ScenarioFrameworkGetLayerBase "{63230CE392440D8E}" {
+               m_sLayerBaseName "StPierre"
+              }
+             }
+             SCR_ScenarioFrameworkActionWaitAndExecute "{63230CE367CDF6C9}" {
+              m_iDelayInSeconds 300
+              m_iDelayInSecondsMax 300
+              m_aActions {
+               PGT_TransitionTrigger "{63230CE37CD12FF5}" {
+               }
+              }
+             }
+            }
+           }
+          }
+          m_sCountdownTitleText "УДЕРЖАТЬ ЦЕРКОВЬ В МОНТИНЬЯКЕ"
+          m_fDefendTime 600
+          m_aFactionSettings {
+           SCR_ScenarioFrameworkTaskDefendAttackingFaction "{5C5A81043FCD0717}" {
+            m_sFactionKey "US"
+           }
+           SCR_ScenarioFrameworkTaskDefendDefendingFaction "{5C5A8104314438A8}" {
+            m_sFactionKey "USSR"
+           }
+          }
+          m_aAttackerLayerNames {
+          }
+         }
+        }
+        coords 5.956 11.127 61.442
+        {
+         GenericEntity Defender_US2 {
+          ID "5E9A6605F6F0B5E4"
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_sFactionKey "USSR"
+           }
+          }
+          {
+           GenericEntity {
+            ID "5E9A6605F6F0B5F0"
+            components {
+             SCR_ScenarioFrameworkSlotDefend "{5C52E161597D867A}" {
+              m_sFactionKey "USSR"
+             }
+            }
+           }
+           GenericEntity {
+            ID "5E9A6605F6F0B5ED"
+            components {
+             SCR_ScenarioFrameworkSlotTrigger "{5A4B5098DE424991}" {
+              m_aPlugins {
+               SCR_ScenarioFrameworkPluginTrigger "{5AC53D73FCB1F805}" {
+                m_fAreaRadius 40
+               }
+              }
+             }
+            }
+            coords -24.548 0.199 -11.819
+           }
+          }
+         }
+        }
+       }
+       GenericEntity Layer4 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+        coords 0.762 0.002 0.311
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          SlotAI131 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+              m_aLayerName {
+               "SlotWaypoint10"
+              }
+             }
+             m_eAISkill EXPERT
+             m_fPerceptionFactor 50
+             m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            }
+           }
+           coords -360.79 108.273 -137.059
+          }
+          SlotAI132 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+              m_aLayerName {
+               "SlotWaypoint10"
+              }
+             }
+             m_eAISkill EXPERT
+             m_fPerceptionFactor 50
+             m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            }
+           }
+           coords -16.031 43.22 -307.772
+          }
+          SlotAI133 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+              m_aLayerName {
+               "SlotWaypoint10"
+              }
+             }
+             m_eAISkill EXPERT
+             m_fPerceptionFactor 50
+             m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            }
+           }
+           coords -30.129 50.288 -324.779
+          }
+          SlotAI134 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+              m_aLayerName {
+               "SlotWaypoint10"
+              }
+             }
+             m_eAISkill EXPERT
+             m_fPerceptionFactor 50
+             m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            }
+           }
+           coords -538.829 108.756 -5.93
+          }
+          SlotAI135 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+              m_aLayerName {
+               "SlotWaypoint10"
+              }
+             }
+             m_eAISkill EXPERT
+             m_fPerceptionFactor 50
+             m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            }
+           }
+           coords 172.789 42.595 228.195
+          }
+          SlotAI136 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+              m_aLayerName {
+               "SlotWaypoint10"
+              }
+             }
+             m_eAISkill EXPERT
+             m_fPerceptionFactor 50
+             m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            }
+           }
+           coords 67.818 37.811 275.104
+          }
+          SlotAI137 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+              m_aLayerName {
+               "SlotWaypoint10"
+              }
+             }
+             m_eAISkill EXPERT
+             m_fPerceptionFactor 50
+             m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            }
+           }
+           coords -19.63 71.651 -300.312
+          }
+          SlotAI138 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6316B08AAD227300}" {
+              m_aLayerName {
+               "SlotWaypoint10"
+              }
+             }
+             m_eAISkill EXPERT
+             m_fPerceptionFactor 50
+             m_sGroupPrefab "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            }
+           }
+           coords -282.384 65.515 -118.097
+          }
+         }
+         GenericEntity SlotWaypoint10 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_Waypoint SCR_ScenarioFrameworkWaypointAttack "{6316B08AA202F4E3}" {
+             m_fCompletionRadius 30
+            }
+           }
+          }
+          coords -16.634 7.109 67.744
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
