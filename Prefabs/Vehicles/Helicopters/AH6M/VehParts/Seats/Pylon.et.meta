@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{DAA596BC62AD9B1D}Prefabs/Vehicles/Helicopters/AH6M/VehParts/Seats/Pylon.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

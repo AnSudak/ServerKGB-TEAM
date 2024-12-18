@@ -1,0 +1,8 @@
+StaticModelEntity : "{472BE7BF1240C1CE}Prefabs/Compositions/Misc/SubCompositions/Utility/Helipad_Lights_US_01.et" {
+ coords 6494.242 0.234 5537.769
+ angleY 62.223
+}
+GenericEntity : "{DBD178AE8D6F0075}Prefabs/Props/Military/Compositions/USSR/VehicleService_USSR.et" {
+ coords 6506.719 78.124 5536.073
+ angleY 57.847
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C227D8392B38E049}Prefabs/Vehicles/Helicopters/AH6M/VehParts/Rotor/VehPart_AH6M_rotor_main_base.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

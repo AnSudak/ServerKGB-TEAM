@@ -115,12 +115,12 @@ $grp StaticModelEntity : "{A027B45306A1E311}Prefabs/Structures/Infrastructure/Pa
   scale 2.164
  }
  {
-  coords 6394.25 2.977 5575.288
+  coords 6394.25 2.788 5575.288
   angleY -59.551
   scale 2.142
  }
  {
-  coords 6388.489 2.435 5565.431
+  coords 6388.489 2.246 5565.431
   angleY -59.551
   scale 2.142
  }
@@ -130,7 +130,7 @@ $grp StaticModelEntity : "{A027B45306A1E311}Prefabs/Structures/Infrastructure/Pa
     Object "{692C9C0B7FD80562}Assets/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m_90.xob"
    }
   }
-  coords 6383.223 2.048 5563.928
+  coords 6383.223 1.859 5563.928
   angleY 30.449
   scale 2.142
  }
@@ -140,7 +140,7 @@ $grp StaticModelEntity : "{A027B45306A1E311}Prefabs/Structures/Infrastructure/Pa
     Object "{EE2AD3E016C2C4F9}Assets/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m.xob"
    }
   }
-  coords 6374.262 1.375 5569.099
+  coords 6374.262 1.131 5569.099
   angleY 30.449
   scale 2.142
  }
@@ -150,7 +150,7 @@ $grp StaticModelEntity : "{A027B45306A1E311}Prefabs/Structures/Infrastructure/Pa
     Object "{6D5ADDCFB1D5666D}Assets/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_End_Right.xob"
    }
   }
-  coords 6402.888 3.661 5589.998
+  coords 6402.888 3.472 5589.998
   angleY -59.551
   scale 2.142
  }
@@ -160,7 +160,7 @@ $grp StaticModelEntity : "{A027B45306A1E311}Prefabs/Structures/Infrastructure/Pa
     Object "{EE2AD3E016C2C4F9}Assets/Structures/Infrastructure/Pavements/AsphaltPavement_01/AsphaltPavement_01_Wide_4m.xob"
    }
   }
-  coords 6375.799 1.528 5568.206
+  coords 6375.799 1.284 5568.206
   angleY 30.449
   scale 2.142
  }

@@ -450,3 +450,19 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
 }
+GenericEntity : "{DBD178AE8D6F0075}Prefabs/Props/Military/Compositions/USSR/VehicleService_USSR.et" {
+ components {
+  SCR_CampaignBuildingProviderComponent "{5ED49CDEA85A0083}" {
+   m_aAvailableTraits {
+    50 54 53
+   }
+  }
+  SCR_CatalogEntitySpawnerComponent "{5D22B968F23A847A}" {
+   m_aAllowedLabels {
+    50 54 53
+   }
+  }
+ }
+ coords 6376.632 85.778 5561.464
+ angleY 120
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A67B39D999D0C005}Prefabs/Vehicles/Helicopters/AH6M/Lights/VehicleLight_AH6M_Navigating_White.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

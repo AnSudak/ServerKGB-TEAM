@@ -1,0 +1,19 @@
+Vehicle : "{1F9BB80C3EC3C891}Prefabs/Vehicles/Core/Wheeled_Car_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  RigidBody "{51DAA09FECF52BBF}" {
+   Mass 6000
+   LinearSleepingThreashold 0.4
+   AngularSleepingThreashold 0.4
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_Image "{24754CE7C42B9C92}UI/Textures/EditorPreviews/Vehicles/K4386/K4386.edds"
+    m_sFaction "USSR"
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+ }
+}

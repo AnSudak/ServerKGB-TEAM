@@ -1792,10 +1792,6 @@ DecalEntity : "{4AD6EB80A8B1FA3A}Prefabs/Decals/Dirt/Decal_Dirt_Patch_03.et" {
  scale 10
  FarPlane 1.5
 }
-GenericEntity : "{4E359BDD7706A13D}PrefabsEditable/Auto/Props/Military/Compositions/USSR/E_VehicleService_USSR_Medium.et" {
- coords 6373.91 85.779 5557.741
- angleY 119.571
-}
 $grp SCR_SpawnPoint : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
  {
   coords 6325.949 91.982 5634.637
@@ -4314,10 +4310,6 @@ $grp SCR_DestructibleEntity : "{C50DFD7AEBFFB3F3}PrefabLibrary/Props/Decoration/
   angleY -59.734
   angleZ 0.001
  }
-}
-GenericEntity : "{D77DFB4A8FB91578}PrefabsEditable/Auto/Props/Military/Compositions/USSR/E_VehicleService_USSR.et" {
- coords 6374.833 85.767 5559.277
- angleY 120
 }
 $grp GenericEntity : "{DDE8710EA3DEC5FD}Prefabs/Structures/Signs/Military/Supplies/Sign_SupplyStorage_01_Ammo_USSR.et" {
  {

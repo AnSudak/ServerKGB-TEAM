@@ -1,0 +1,21 @@
+Vehicle : "{863A65C2E3330F2F}Prefabs/Vehicles/Wheeled/K4386/K4386_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  RigidBody "{51DAA09FECF52BBF}" {
+   Mass 6000
+   LinearSleepingThreashold 0.4
+   AngularSleepingThreashold 0.4
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_sFaction "USSR"
+    m_aAutoLabels {
+     10 123 50
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+ }
+}

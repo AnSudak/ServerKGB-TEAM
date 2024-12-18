@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{13868AD8B954131C}Prefabs/Vehicles/Helicopters/AH6M/Configs/CargoCompartment_MH6_Left.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}
