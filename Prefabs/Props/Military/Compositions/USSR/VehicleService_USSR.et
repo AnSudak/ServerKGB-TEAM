@@ -34,6 +34,7 @@ GenericEntity : "{62AFF7A02EE209F9}Prefabs/Props/Military/Compositions/VehicleSe
    }
   }
   SCR_CatalogEntitySpawnerComponent "{5D22B968F23A847A}" {
+   m_iVehicleLockedDuration 10000
    m_aAllowedLabels {
     50 54 53 51
    }

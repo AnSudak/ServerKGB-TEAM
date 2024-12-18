@@ -1,5 +1,5 @@
 GameProject {
- ID "ServerKGB-TEAM"
+ ID "KGB-TEAMServer"
  GUID "631C7264FA5EDA9D"
  TITLE "ServerKGB-TEAM"
  Dependencies {
