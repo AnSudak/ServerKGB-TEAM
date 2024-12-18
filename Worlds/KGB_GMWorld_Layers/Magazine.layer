@@ -88,7 +88,7 @@ $grp SCR_DestructibleEntity : "{C8A5C92E74ABB5EA}Prefabs/Props/Civilian/PicnicTa
   angleY -58.803
  }
 }
-$grp SCR_DestructibleEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
+$grp GenericEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
  {
   coords 6264.791 92.828 5660.861
   angleX -2.745

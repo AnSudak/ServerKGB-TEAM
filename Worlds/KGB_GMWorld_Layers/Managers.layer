@@ -98,6 +98,32 @@ SCR_GameModeEditor GameMode_GameMaster : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edi
     }
    }
   }
+  SCR_BaseTaskManager {
+   ID "56E685E92F1B7FAB"
+   {
+    SCR_ScenarioFrameworkTaskClearAreaSupportEntity {
+     coords -3505.133 -0.889 -12508.006
+    }
+    SCR_ScenarioFrameworkTaskDefendSupportEntity {
+     coords -3505.136 -0.889 -12507.883
+    }
+    SCR_ScenarioFrameworkTaskDeliverSupportEntity {
+     coords -3505.886 -0.876 -12508.748
+    }
+    SCR_ScenarioFrameworkTaskDestroySupportEntity {
+     coords -3505.588 -0.889 -12508.464
+    }
+    SCR_ScenarioFrameworkTaskExtractSupportEntity {
+     coords -3504.433 -0.832 -12507.415
+    }
+    SCR_ScenarioFrameworkTaskKillSupportEntity {
+     coords -3505.134 -0.889 -12508.559
+    }
+    SCR_ScenarioFrameworkTaskSupportEntity {
+     coords -3505.3 -0.889 -12508.016
+    }
+   }
+  }
   SCR_LoadoutManager {
    ID "56E685E92F1B7E2A"
    m_aPlayerLoadouts {
